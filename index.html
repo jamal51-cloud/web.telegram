@@ -1,1 +1,257 @@
+<!-- Versi lengkap: support Telegram + fitur utuh -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Toko Digital JURAGAN MOD</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: url('https://img1.pixhost.to/images/7021/619277202_skyzo.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #f5f5f5;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: -1;
+    }
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+      color: #00ffe5;
+      text-shadow: 0 0 10px #00ffe5, 0 0 25px #00ffe5;
+      animation: floatGlow 3s ease-in-out infinite;
+    }
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+      color: #ddd;
+    }
+    @keyframes floatGlow {
+      0% { transform: translateY(0) scale(1); }
+      50% { transform: translateY(-8px) scale(1.03); }
+      100% { transform: translateY(0) scale(1); }
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+    .card {
+      background: rgba(0, 0, 0, 0.8);
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 0 12px rgba(108, 0, 255, 0.3);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+    }
+    .card h2 {
+      font-size: 1.3rem;
+      margin: 0 0 0.5rem;
+      color: #00ffff;
+    }
+    .card p {
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+      color: #ccc;
+    }
+    .btn {
+      display: inline-block;
+      background: #0088cc;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: #006fa1;
+    }
 
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 10;
+      left: 0; top: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.85);
+    }
+
+    .modal-content {
+      background-color: #1a1a1a;
+      margin: 10% auto;
+      padding: 20px;
+      border-radius: 12px;
+      width: 80%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .modal-content h3 {
+      color: #00ffff;
+      margin-bottom: 1rem;
+    }
+
+    .country-list button {
+      margin: 6px;
+      padding: 10px 14px;
+      background: #00ffe5;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      color: #000;
+    }
+
+    .close-btn {
+      margin-top: 20px;
+      background: crimson;
+      color: #fff;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>JURAGAN MOD</h1>
+    <p>Store Digital Sultan Style - Transaksi via Telegram!</p>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <h2>NOKOS All Negara</h2>
+      <p>Harga: 5k - 20k</p>
+      <button class="btn" onclick="showModal()">Beli Sekarang</button>
+    </div>
+
+    <div class="card">
+      <h2>Panel Pterodactyl</h2>
+      <p>Harga: 1k - 5k</p>
+      <button class="btn" onclick="showPanelModal()">Beli Sekarang</button>
+    </div>
+
+    <div class="card">
+      <h2>Admin Panel</h2>
+      <p>Harga: 10k</p>
+      <a class="btn" href="https://t.me/Juraganmuda238?start=AdminPanel" target="_blank">Beli via Telegram</a>
+    </div>
+
+    <div class="card">
+      <h2>Reseller Panel</h2>
+      <p>Harga: 5k</p>
+      <a class="btn" href="https://t.me/Juraganmuda238?start=ResellerPanel" target="_blank">Beli via Telegram</a>
+    </div>
+
+    <div class="card">
+      <h2>Owner Panel</h2>
+      <p>Harga: 20k</p>
+      <a class="btn" href="https://t.me/Juraganmuda238?start=OwnerPanel" target="_blank">Beli via Telegram</a>
+    </div>
+  </div>
+
+  <!-- ❗ Info -->
+  <div style="text-align: center; font-size: 0.95rem; color: #ffaaaa; padding: 0 1rem; margin-top: -1rem;">
+    <p>❗ Kalau Telegram ga bales, bisa coba ulangi atau kirim pesan ulang.</p>
+  </div>
+
+  <!-- 🔗 Telegram CTA -->
+  <div style="text-align: center; padding: 2rem;">
+    <a href="https://t.me/Juraganmuda238" target="_blank" class="btn">
+      💬 Hubungi via Telegram
+    </a>
+  </div>
+
+  <!-- Modal NOKOS -->
+  <div id="countryModal" class="modal">
+    <div class="modal-content">
+      <h3>Pilih Negara:</h3>
+      <div class="country-list">
+        <button onclick="buyNokos('Indonesia')">Indonesia</button>
+        <button onclick="buyNokos('Malaysia')">Malaysia</button>
+        <button onclick="buyNokos('India')">India</button>
+        <button onclick="buyNokos('USA')">USA</button>
+        <button onclick="buyNokos('Vietnam')">Vietnam</button>
+        <button onclick="buyNokos('Thailand')">Thailand</button>
+      </div>
+      <button class="close-btn" onclick="closeModal()">Tutup</button>
+    </div>
+  </div>
+
+  <!-- Modal Panel -->
+  <div id="panelModal" class="modal">
+    <div class="modal-content">
+      <h3>Pilih Paket Panel Pterodactyl:</h3>
+      <div class="country-list">
+        <button onclick="buyPanel('3GB - 1K')">3GB - 1K</button>
+        <button onclick="buyPanel('6GB - 2K')">6GB - 2K</button>
+        <button onclick="buyPanel('8GB - 3K')">8GB - 3K</button>
+        <button onclick="buyPanel('10GB - 4K')">10GB - 4K</button>
+        <button onclick="buyPanel('UNLI - 5K')">UNLI - 5K</button>
+      </div>
+      <button class="close-btn" onclick="closePanelModal()">Tutup</button>
+    </div>
+  </div>
+
+  <!-- 🔊 Sound -->
+  <audio id="introSound" autoplay onended="this.remove();" style="display: none;">
+    <source src="gihun_sound.mp3" type="audio/mpeg">
+    Browser tidak support audio.
+  </audio>
+
+  <script>
+    // NOKOS Modal
+    function showModal() {
+      document.getElementById("countryModal").style.display = "block";
+    }
+    function closeModal() {
+      document.getElementById("countryModal").style.display = "none";
+    }
+    function buyNokos(negara) {
+      const url = `https://t.me/Juraganmuda238?start=NOKOS_${encodeURIComponent(negara)}`;
+      window.open(url, "_blank");
+      closeModal();
+    }
+
+    // PANEL Modal
+    function showPanelModal() {
+      document.getElementById("panelModal").style.display = "block";
+    }
+    function closePanelModal() {
+      document.getElementById("panelModal").style.display = "none";
+    }
+    function buyPanel(paket) {
+      const url = `https://t.me/Juraganmuda238?start=Panel_${encodeURIComponent(paket)}`;
+      window.open(url, "_blank");
+      closePanelModal();
+    }
+
+    // Volume control
+    window.addEventListener('DOMContentLoaded', () => {
+      const audio = document.getElementById("introSound");
+      if (audio) audio.volume = 0.7;
+    });
+  </script>
+
+</body>
+        </html>
